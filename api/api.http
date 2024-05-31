@@ -36,10 +36,10 @@ Content-Type: application/json
 }
 
 ### Get Account by ID
-GET {{host}}/api/{{version}}/accounts/2
+GET {{host}}/api/{{version}}/accounts/1
 
 ### Update Account by ID
-PUT {{host}}/api/{{version}}/accounts/2
+PUT {{host}}/api/{{version}}/accounts/1
 Content-Type: application/json
 
 {
@@ -51,11 +51,11 @@ Content-Type: application/json
 }
 
 ### Delete Account by ID
-DELETE {{host}}/api/{{version}}/accounts/4
+DELETE {{host}}/api/{{version}}/accounts/1
 
 ### Get Account Collection
 GET {{host}}/api/{{version}}/accounts
 
 
 ### Delete User by ID
-DELETE {{host}}/api/{{version}}/users/3
+DELETE {{host}}/api/{{version}}/users/1
