@@ -1,0 +1,61 @@
+### Get User Collection
+GET {{host}}/api/{{version}}/users
+
+### Create User
+POST {{host}}/api/{{version}}/users/register
+Content-Type: application/json
+
+{
+  "Email": "test@example.com",
+  "Password": "Test12345"
+}
+
+### Get User by ID
+GET {{host}}/api/{{version}}/users/2
+
+### Update User by ID
+PUT {{host}}/api/{{version}}/users/2
+Content-Type: application/json
+
+{
+  "Email": "updated@example.com",
+  "Password": "UpdatedPassword123"
+}
+
+
+### Create Account
+POST {{host}}/api/{{version}}/accounts
+Content-Type: application/json
+
+{
+  "UserID": 1,
+  "AccountName": "Primary Account",
+  "AccountType": "Bank",
+  "Balance": 1000.00,
+  "Currency": "USD"
+}
+
+### Get Account by ID
+GET {{host}}/api/{{version}}/accounts/2
+
+### Update Account by ID
+PUT {{host}}/api/{{version}}/accounts/2
+Content-Type: application/json
+
+{
+  "UserID": 1,
+  "AccountName": "Updated Account",
+  "AccountType": "Savings",
+  "Balance": 1500.00,
+  "Currency": "USD"
+}
+
+### Delete Account by ID
+DELETE {{host}}/api/{{version}}/accounts/4
+
+### Get Account Collection
+GET {{host}}/api/{{version}}/accounts
+
+
+### Delete User by ID
+DELETE {{host}}/api/{{version}}/users/3
