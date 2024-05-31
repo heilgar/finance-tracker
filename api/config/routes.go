@@ -1,7 +1,6 @@
-package routes
+package config
 
 import (
-	"heilgar/finance-tracker/config"
 	"heilgar/finance-tracker/core"
 	"heilgar/finance-tracker/src/account"
 
@@ -14,11 +13,11 @@ func SetupRouter() *gin.Engine {
 	router := gin.Default()
 
 	// Ensure the database is connected
-	config.ConnectDatabase()
+	ConnectDatabase()
 
 	// Initialize repositories with the connected database
-	userRepository := user.NewRepository(config.DB)
-	accountRepository := account.NewRepository(config.DB)
+	userRepository := user.NewRepository(DB)
+	accountRepository := account.NewRepository(DB)
 
 	// Initialize controllers with the repositories
 	userController := user.NewController(userRepository)
